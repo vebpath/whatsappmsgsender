@@ -1,0 +1,72 @@
+@import url("//fonts.googleapis.com/css?family=Google+Sans:400,500,600,700");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Google Sans", Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+:root{
+  --fontSize : 20px;
+  --BorderRadius: 5px;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 600px;
+  gap: 15px;
+  background-color: #ccffe3;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+input,select{
+  padding: 10px;
+  font-size: var(--fontSize);
+  border: none;
+  outline: none;
+  border: 1px solid #17ad5a;
+  border-radius: var(--BorderRadius);
+}
+
+textarea{
+  height: 200px;
+  border-radius: var(--BorderRadius);
+  border: 1px solid #17ad5a;
+  padding: 10px;
+  font-size: var(--fontSize);
+  resize: none;
+}
+
+button{
+  padding: 10px;
+  font-size: var(--fontSize);
+  background-color: #17ad5a;
+  border: none;
+  font-weight: bold;
+  border-radius: var(--BorderRadius);
+  color: white;
+  opacity: .6;
+  pointer-events: none;
+}
+
+
+.active{
+  opacity: 1;
+  pointer-events: all;
+  cursor: pointer;
+}

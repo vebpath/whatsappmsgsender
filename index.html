@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Whatsapp Message sender</title>
+  </head>
+  <body>
+    <main>
+      <input id="number" type="number">
+      <select onchange="setStyle(this)" >
+        <option value="">Select style</option>
+        <option value="*">Bold</option>
+        <option value="_">Italic</option>
+        <option value="```">Monospace</option>
+        <option value="~">Strickthrough</option>
+      </select>
+
+      <textarea id="message" ></textarea>
+      <button onclick="sendMessage()" id="sendBtn">Send</button>
+    </main>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
